@@ -17,6 +17,11 @@ class Bear
     @food.push(river.take_fish_from)
     @food.last
   end
+
+  def details
+    puts "#{name}(#{@type}) has the below food:-"
+    @food.each { |fish| puts "\t#{fish.name}"}
+  end
 end
 
 class River
@@ -25,7 +30,12 @@ class River
   end
 
   def take_fish_from
-    @fishes.shuffle.pop()
+    @fishes.shuffle!.pop()
+  end
+
+  def details
+    puts "The river currently has the following fish:-"
+    @fishes.each { |fish| puts "\t#{fish.name}"}
   end
 end
 
