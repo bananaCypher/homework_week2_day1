@@ -4,6 +4,6 @@ class River
   end
 
   def take_fish_from
-    @fishes.pop()
+    @fishes.shuffle.pop()
   end
 end

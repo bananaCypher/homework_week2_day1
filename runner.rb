@@ -1,6 +1,4 @@
-require_relative('bear.rb')
-require_relative('fish.rb')
-require_relative('river.rb')
+require_relative('classes.rb')
 
 fred = Bear.new('Fred', 'Panda')
 gerry = Bear.new('Gerry', 'Polar')
